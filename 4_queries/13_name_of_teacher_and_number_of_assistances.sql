@@ -6,5 +6,5 @@ JOIN assistance_requests ON teachers.id = teacher_id
 JOIN students ON students.id = student_id
 JOIN cohorts ON cohort_id = cohorts.id
 WHERE cohorts.name = 'JUL02'
-GROUP BY teacher, cohort
-ORDER BY teacher;
+GROUP BY cohort, teacher
+ORDER BY cohort;
